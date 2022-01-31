@@ -102,3 +102,6 @@ autocomplete: Overrides the instance autocomplete function to allow for custom a
 
 ask: Sames as the value parameter. The prompt label. If opts is not in the first position, the ask parameter will not be overridden by this property.
 ```
+### License
+
+Copyright © 2022, [Luis Obregon](https://github.com/luisobregon21).
