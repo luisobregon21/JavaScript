@@ -62,4 +62,10 @@ const person = {
 Syntax:
     console.log("Message to be given");
 ```
+```
+console formatting:
+
+const name = "Juan";
+
+console.log(`Use the dollar and curly brackets to access the variable: ${name}`)// The output will give you 'Juan'
 
