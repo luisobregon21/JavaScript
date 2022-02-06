@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>func</title>
+    <h1> Function TESTING</h1>
+</head>
+
+<body>
+    <script type="text/javascript">
+        const output = checkAge('Luis', 21);
+
+        function checkAge(name, age) {
+            if (!age) {
+                return "WHAT DO YOU MEAN YOU DON'T HAVE AN AGE!!?";
+            }
+            if (!name) {
+                return "WHAT DO YOU MEAN YOU DON'T HAVE A NAME!!!!!?";
+            }
+
+            if (age < 21) {
+                return `Go home, ${name}!`;
+            } else {
+                return `Welcome ${name}! Ready to party?`;
+            }
+        }
+        const output = checkAge('Luis', 27);
+        document.write("<h3>" + output + "</h3>");
+    </script>
+</body>
+
+</html>

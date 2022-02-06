@@ -1,0 +1,1 @@
+# This directory is to practice functions in js

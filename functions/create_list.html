@@ -1,0 +1,47 @@
+<html <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hobbies</title>
+    <!-- Jquery Library import -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- SYNTAX: $(selector).action() -->
+    <h1>jQuery: Making a list</h1>
+</head>
+
+<body>
+    <h1> My Hobbies </h1>
+    <ol id="hobbie">
+    </ol>
+    <input id="userinput" placeholder="write hobbie" type="text" />
+    <button id="addHobbie">Add Hobbie</buttonid>
+        <script>
+            var hob = ['Futbol', 'Cooking', 'Photography'];
+
+            function redrawList() {
+                var list = $("#hobbie");
+                list.html("");
+
+                $.each(hob, function (index, value) {
+                    $("<li/>").text(value).appendTo(list);
+                });
+            }
+
+            redrawList();
+            console.log(hob);
+            $("#addHobbie").click(function () {
+                var hobText = $("#userinput").val();
+                hob.push(hobText);
+                console.log(hob);
+
+                redrawList();
+            });
+
+        </script>
+</body>
+
+</html>
