@@ -1,0 +1,1 @@
+# The following excercises are focused on practicing loops and conditions
